@@ -1,7 +1,7 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
-function Serie() {
+function Movies() {
   return (
     <>
       <Header />
@@ -11,4 +11,4 @@ function Serie() {
   );
 }
 
-export default Serie;
+export default Movies;

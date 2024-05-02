@@ -1,4 +1,7 @@
 import "./Header.css";
+import "../../pages/serie/Serie";
+import "../../pages/home/Home";
+import "../../pages/movies/Movies";
 
 function Header() {
   return (
@@ -11,11 +14,21 @@ function Header() {
         />
 
         <nav className="nav-bar">
-          <span>Series</span>
+          <a href="/Home">
+            <span>Inicio</span>
+          </a>
 
-          <span>Películas</span>
+          <a href="/Series">
+            <span>Series</span>
+          </a>
 
-          <span>Mi lista</span>
+          <a href="/Movies">
+            <span>Películas</span>
+          </a>
+
+          <a href="/Lists">
+            <span>Listas</span>
+          </a>
         </nav>
 
         <nav className="second-nav-bar">
@@ -23,7 +36,7 @@ function Header() {
 
           <span class="material-symbols-outlined">notifications</span>
 
-					<img src="../../public/fotos/pfp.png" alt="pfp" id="pfp-image"/>
+          <img src="../../public/fotos/pfp.png" alt="pfp" id="pfp-image" />
         </nav>
       </header>
     </div>
