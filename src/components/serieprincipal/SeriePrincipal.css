@@ -1,0 +1,26 @@
+
+.series {
+    margin-top: 10px;
+    height: 75vh;
+}
+
+.img-box {
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.img-box img{
+    width: 200px;
+    height: 80%;
+    
+}
+
+.img-box span {
+    margin-top: 15px;
+    width: 100vw;
+    display: flex;
+    padding: 0px 100px;
+    flex-direction: column;
+    border-bottom: solid 3px;
+}

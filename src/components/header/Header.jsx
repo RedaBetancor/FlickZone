@@ -21,14 +21,6 @@ function Header() {
           <a href="/Series">
             <span>Series</span>
           </a>
-
-          <a href="/Movies">
-            <span>Películas</span>
-          </a>
-
-          <a href="/Lists">
-            <span>Listas</span>
-          </a>
         </nav>
 
         <nav className="second-nav-bar">
