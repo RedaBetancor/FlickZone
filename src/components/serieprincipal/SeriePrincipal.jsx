@@ -1,68 +1,48 @@
+import { useState, useEffect } from "react";
 import "./SeriePrincipal.css";
+import SeriesServices from "../../services/SeriesServices";
+import ShowContent from "../showcontent/ShowContent";
 
+import "./SeriePrincipal.css"
 function SeriePrincipal() {
+  const [series, setSeries] = useState([]);
+  const getAllSeries = async () => {
+    let auxSeries = {};
+    const items = await SeriesServices.getAllSeries();
+    items.forEach((item) => {
+      const key = item.key;
+      const vals = item.val();
+
+      if (!auxSeries[key]) {
+        auxSeries[key] = [{}];
+      }
+
+      vals.forEach((val, index) => {
+        auxSeries[key][index] = {
+          name: val.name,
+          img: val.img,
+        };
+      });
+    });
+    setSeries(auxSeries);
+  };
+
+  useEffect(() => {
+    getAllSeries();
+  }, []);
+
   return (
     <>
-      <div className="series">
-        <h2 id="title">Series dramáticas</h2>
-        <div className="img-box">
-          <span>
-            Peaky bliders
-            <img src="../../public/fotos/peakyblinders.png" alt="peaky"></img>
-          </span>
-          <span>
-            Stranger Things
-            <img src="../../public/fotos/strangerthings.png" alt="stranger"></img>
-          </span>
-          <span>
-            The Boys
-            <img src="../../public/fotos/theboys.png" alt="theboys"></img>
-          </span>
-          <span>
-            The Walking Dead
-            <img src="../../public/fotos/thewalkingdead.png" alt="twd"></img>
-          </span>
-        </div>
-
-        <h2>Series de Anime</h2>
-        <div className="img-box">
-          <span>
-            One Piece
-            <img src="../../public/fotos/onepiece.png" alt="onepiece"></img>
-          </span>
-          <span>
-            Jujutsu Kaisen
-            <img src="../../public/fotos/jujutsukaisen.jpg" alt="jujutsu"></img>
-          </span>
-          <span>
-            Demon Slayer
-            <img src="../../public/fotos/kny.png" alt="KnY"></img>
-          </span>
-          <span>
-            Attack on Titan
-            <img src="../../public/fotos/snk.png" alt="snk"></img>
-          </span>
-        </div>
-
-        <h2>Series de Humor</h2>
-        <div className="img-box">
-          <span>
-            Aqui no hay quien viva
-            <img src="../../public/fotos/aquinohayquienviva.png" alt="anhqv"></img>
-          </span>
-          <span>
-            Aida
-            <img src="../../public/fotos/aida.png" alt="aida"></img>
-          </span>
-          <span>
-            The Office
-            <img src="../../public/fotos/theoffice.png" alt="theoffice"></img>
-          </span>
-          <span>
-            La que se avecina
-            <img src="../../public/fotos/lqsa.png" alt="lqsa"></img>
-          </span>
-        </div>
+      <div className="container-serie">
+        <section className="serie-container-anime">
+          <ShowContent title="Anime" data={series["anime"]} />
+        </section>
+        <section className="serie-container-drama">
+          <ShowContent title="Drama" data={series["drama"]} />
+        </section>
+        <section className="serie-container-humor">
+          <ShowContent title="Humor" data={series["humor"]} />
+        </section>
       </div>
     </>
   );

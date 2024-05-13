@@ -1,0 +1,14 @@
+.serie-title {
+  font-size: 3rem;
+}
+
+.serie-container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.serie-item img {
+  width: 300px;
+  height: 300px;
+}

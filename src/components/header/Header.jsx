@@ -24,9 +24,9 @@ function Header() {
         </nav>
 
         <nav className="second-nav-bar">
-          <span class="material-symbols-outlined">search</span>
+          <span className="material-symbols-outlined">search</span>
 
-          <span class="material-symbols-outlined">notifications</span>
+          <span className="material-symbols-outlined">notifications</span>
 
           <img src="../../public/fotos/pfp.png" alt="pfp" id="pfp-image" />
         </nav>

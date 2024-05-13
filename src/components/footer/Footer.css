@@ -1,17 +1,13 @@
 
-.container-span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-footer {
+    height: 19vh; 
     border-top: 2px solid red;
 }
 
-.column-1, .column-2, .column-3, .column-4 {
+.container-footer p {
     display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.column-1 span, .column-2 span, .column-3 span, .column-4 span {
-padding: 2px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }

@@ -28,7 +28,7 @@ function Principal() {
     <>
 			<div className="name">
 				<h1>Mira las mejores peliculas y serie en Stream</h1>
-				<p>Tenemos grandes exitos como Batman Begins, Breaking Bad o Kong vs Godzilla. ¿Te lo vas a perder?</p>
+				<p>Tenemos grandes exitos como Batman Begins, Breaking Bad o Kong vs Godzilla.</p>
 			</div>
       <div className="container">
         <div className="slider">
