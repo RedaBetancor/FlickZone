@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import SeriesServices from "../../services/SeriesServices";
+
 import "./ShowContent.css";
 
 const ShowContent = ({ title, data }) => {

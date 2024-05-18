@@ -21,6 +21,10 @@ function Header() {
           <a href="/Series">
             <span>Series</span>
           </a>
+
+          <a href="/Foro">
+            <span>Foro</span>
+          </a>
         </nav>
 
         <nav className="second-nav-bar">

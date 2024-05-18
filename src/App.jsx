@@ -1,8 +1,8 @@
 import "./App.css";
 import Home from "./pages/home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Serie from "./pages/serie/Serie";
 import Movies from "./pages/movies/Movies";
+import Serie from "./pages/serie/Serie";
 
 function App() {
   return (
