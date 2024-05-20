@@ -1,0 +1,18 @@
+<rss version="2.0">
+	<channel>
+		<title>Películas y Series de FlickZone</title>
+		<description>Descubre las últimas películas y series disponibles en nuestra plataforma</description>
+		<link>http://localhost:5173/Home</link>
+		<lastBuildDate>20/05/2024</lastBuildDate>
+		<pubDate>19/05/2024</pubDate>
+	</channel>
+
+	<item>
+		<title>One Piece</title>
+		<description>El pirata Luffy se embarca en una aventura para encontrar el legendario tesoro, el
+			One Piece</description>
+		<link></link>
+		<pubDate>Fecha de Lanzamiento</pubDate>
+		<category>Películas o Series</category>
+	</item>
+</rss>

@@ -12,16 +12,8 @@ function Principal() {
     return () => clearInterval(interval);
   }, []);
 
-  const goToSlide = (slideIndex) => {
-    setCurrentSlide(slideIndex);
-  };
-
   const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % 3);
-  };
-
-  const goToPrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + 3) % 3);
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % 8);
   };
 
   return (
@@ -41,6 +33,16 @@ function Principal() {
             <img src="../../public/fotos/batmanBegin.png" alt="img2" />
 
             <img src="../../public/fotos/breakingBad.png" alt="img3" />
+
+            <img src="../../public/fotos/avengerendgame.png" alt="img4" />
+
+            <img src="../../public/fotos/frozen.png" alt="img5" />
+
+            <img src="../../public/fotos/harrypotter.png" alt="img6" />
+
+            <img src="../../public/fotos/lordofrings.png" alt="img7" />
+
+            <img src="../../public/fotos/twd.png" alt="img8" />
           </div>
         </div>
       </div>

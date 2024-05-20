@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import "./SeriePrincipal.css";
 import SeriesServices from "../../services/SeriesServices";
 import ShowContent from "../showcontent/ShowContent";
+import { addSeries } from "../../services/FirebaseUtils";
 
-import "./SeriePrincipal.css"
 function SeriePrincipal() {
   const [series, setSeries] = useState([]);
+  
   const getAllSeries = async () => {
     let auxSeries = {};
     const items = await SeriesServices.getAllSeries();
@@ -31,17 +32,20 @@ function SeriePrincipal() {
     getAllSeries();
   }, []);
 
+  const handleAddSeries = async (serie) => {
+    await addSeries(serie);
+    console.log("Series añadidas:", serie);
+  };
+
   return (
     <>
       <div className="container-serie">
         <section className="serie-container-anime">
-          <ShowContent title="Anime" data={series["anime"]} />
-        </section>
-        <section className="serie-container-drama">
-          <ShowContent title="Drama" data={series["drama"]} />
-        </section>
-        <section className="serie-container-humor">
-          <ShowContent title="Humor" data={series["humor"]} />
+          <ShowContent 
+            title="Anime" 
+            data={series["anime"]}
+            onAddSeries={handleAddSeries} 
+          />
         </section>
       </div>
     </>

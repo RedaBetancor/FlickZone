@@ -1,0 +1,79 @@
+.series-list-container h1 {
+  position: absolute;
+  font-size: 2rem;
+  top: 10rem;
+  left: 10rem;
+}
+
+.series-list-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.series-list {
+  display: flex;
+  height: 75vh;
+  gap: 4rem;
+}
+
+.serie-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .series-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .series-list-container h1 {
+    position: relative;
+    top: 20px;
+    left: 0px;
+  }
+
+  .series-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .series-list {
+    flex-wrap: wrap;
+  }
+
+  .series-list-container h1 {
+    position: relative;
+    top: 20px;
+    left: 0px;
+  }
+
+  .series-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
