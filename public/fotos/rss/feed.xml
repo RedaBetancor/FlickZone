@@ -11,8 +11,48 @@
 		<title>One Piece</title>
 		<description>El pirata Luffy se embarca en una aventura para encontrar el legendario tesoro, el
 			One Piece</description>
-		<link></link>
-		<pubDate>Fecha de Lanzamiento</pubDate>
-		<category>Películas o Series</category>
+		<link>http://localhost:5173/Series/0</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
+	</item>
+
+	<item>
+		<title>Jujutsu Kaisen</title>
+		<description>Itadori se enfrenta a un destino incierto</description>
+		<link>http://localhost:5173/Series/1</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
+	</item>
+
+	<item>
+		<title>Demon Slayer</title>
+		<description>Tanjiro emprende un viaje para salvar a su hermana</description>
+		<link>http://localhost:5173/Series/2</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
+	</item>
+
+	<item>
+		<title>Attack on Titan</title>
+		<description>Eren se convierte en aquello que juro destruir</description>
+		<link>http://localhost:5173/Series/3</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
+	</item>
+
+	<item>
+		<title>Dragon Ball</title>
+		<description>Goku emprende un viaje para encontrar las siete bolas del dragón</description>
+		<link>http://localhost:5173/Series/5</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
+	</item>
+
+	<item>
+		<title>Hunter x Hunter</title>
+		<description>Gon hace un viaje para conocer a su padre</description>
+		<link>http://localhost:5173/Series/6</link>
+		<pubDate>20/05/2024</pubDate>
+		<category>Anime</category>
 	</item>
 </rss>

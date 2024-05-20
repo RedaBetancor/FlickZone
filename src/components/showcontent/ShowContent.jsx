@@ -15,7 +15,6 @@ const ShowContent = ({ title, data, onAddSeries}) => {
                 <p>{serie.name}</p>
               </Link>
               <button onClick={() => onAddSeries(serie)}>Añadir</button>
-              {/* <button onClick={() => onRemoveSeries(serie)}>Eliminar</button> */}
             </div>
           ))}
       </div>
