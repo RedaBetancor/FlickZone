@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Serie from "./pages/serie/Serie";
 import List from "./pages/List/List";
 import SerieDescripcion from "./pages/serie/SerieDescripcion";
+import Rss from "./pages/rss/Rss";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Series" element={<Serie />} />
         <Route path="/Series/:id" element={<SerieDescripcion />} />
         <Route path="/Lista" element={<List />} />
+        <Route path="/rss" element={<Rss />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
